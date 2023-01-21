@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Propiedades */
+:root {
+    /*Diseño*/
+    --primary-color: #22253b;
+    --secondary-color: #ffd17d;
+    /*Elementos*/
+    --content-max-width: 1200px;
+}
+
+/* Simple Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    line-height: 1;
+    overflow-x: hidden;
+    /*notificar*/
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* General Blocks */
+.button {
+    background-color: var(--primary-color);
+
+    border: none;
+    border-radius: 20px;
+
+    color: white;
+    font-weight: bold;
+    text-align: center;
+
+    transition: transform 0.1s linear;
+}
+.button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: var(--content-max-width);
+}
+
+/* Estilos del Nav */
+.nav {
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+
+.nav__wrapper {
+    padding: 20px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+}
+
+.logo__inet {
+    font-size: 2rem;
+}
+
+.logo__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav__anchor-list {
+    display: flex;
+    gap: 20px;
+
+    font-size: 1.2rem;
+}
+
+.nav__anchor-box {
+    color: rgb(202, 202, 202);
+}
+
+.nav__anchor-box:hover {
+    color: white;
+}
+
+/* Estilos del Hero */
+.hero {
+    width: 100vw;
+    background: url("../images/hero_bg.jpg");
+    background-size: cover;
+}
+
+.hero__wrapper {
+    padding: 0 20px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 40px;
+
+    height: 550px;
+}
+
+.hero__title {
+    font-size: 4.5rem;
+}
+
+.hero__about {
+    max-width: 60%;
+
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.hero__button {
+    width: 220px;
+    padding: 10px 0;
+
+    font-size: 1.2rem;
+}
+/* Estilos del Hero */
+.menu {
+    width: 100vw;
+    background-color: var(--primary-color);
+}
+
+.menu__wrapper {
+    padding: 80px 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.menu__description {
+    max-width: 70%;
+
+    text-align: center;
+    line-height: 1.5;
+}
+
+.menu__cards {
+    margin-top: 50px;
+    padding: 0 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 80px;
+    row-gap: 40px;
+}
+
+.menu__card {
+    flex: 0 0 14rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+}
+
+.menu__card-box {
+    max-width: 100%;
+    height: 14rem;
+}
+
+.menu__card-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.menu__card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.menu__card-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Estilos del Star*/
+.star {
+    width: 100vw;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.star__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 50px 0;
+}
+
+.star__deco {
+    flex: 1 0 0;
+
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star__img-box{
+    width: 25rem;
+    height: 25rem;
+}
+.star__img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.star__about {
+    flex: 1 0 0;
+
+    padding: 100px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 40px;
+}
+
+.star__title {
+    font-size: 3rem;
+}
+.star__description{
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+.star__button{
+    width: 250px;
+    padding: 10px 0;
+
+    font-size: 1.3rem;
+}
+/* Estilos de Statics*/
+.statics{
+    width: 100vw;
+    background-color: var(--primary-color);
+    color: white;
+}
+.statics__wrapper{
+    padding: 5rem 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+}
+.statics__title{
+    font-size: 3rem;
+}
+.statics__description{
+    font-size: 1.1rem;
+    line-height: 1.2;
+    text-align: center;
+
+    max-width: 70%;
+}
+.statics__cards{
+    margin-top: 2rem;
+    padding: 0 2rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+.statics__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 12rem;
+    height: 12rem;
+
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.statics__card-title{
+    font-size: 2.5rem;
+}
+.statics__card-sub-title{
+    font-size: 1.5rem;
+}
+/* Estilos de Contact*/
+.contact{
+    width: 100vw;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.contact__wrapper{
+    padding: 6rem 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+}
+.contact__title{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.contact__description{
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.4;
+
+    max-width: 70%;
+}
+.contact__infobox{
+    display: flex;
+
+    margin-top: 2rem;
+    height: 3rem;
+    width: 80%;
+
+    border-radius: 35px;
+    background-color: white;
+}
+.contact__input{
+    flex: 3 2 300px;
+    
+    padding: 0 20px;
+
+    font-size: 1.2rem;
+
+    background-color: transparent;
+    border: none;
+}
+.contact__input:focus{
+    outline: none;
+}
+.contact__button{
+    flex: 1 1 120px;
+
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+
+    border: none;
+    border-radius: 35px;
+    background-color: var(--primary-color);
+}
+.contact__button:hover{
+    cursor: pointer;
+}
+/* Estilos de Footer*/
+.footer{
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+.footer__wrapper{
+    padding: 8rem 2rem 4rem 2rem;
+}
+.footer__cards{
+    display: flex;
+    gap: 20px;
+}
+.footer__card{
+    flex: 1 0 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+.footer__card-main{
+    flex: 2 0 0;
+}
+.footer__card-title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.footer__card-info{
+    font-size: 0.8rem;
+}
+.socials{
+    display: flex;
+    gap: 1rem;
+}
+.socials__anchor{
+    color: white;
+    font-size: 1.5rem;
+}
+.footer__anchors{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    font-size: 0.8rem;
+}
+/*Personal Footer*/
+.Jfooter{
+    width: 100vw;
+    background-color: black;
+}
+.Jfooter__wrapper{
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    padding: 20px 0;
+    border-top: 1px solid white;
+    color: white;
+}
+.Jfooter__title{
+    font-size: 1rem;
+    font-weight: normal;
+}
+.Jfooter__sub-title{
+    margin: 10px 0;
+}
+.Jfooter__social-list{
+    display: flex;
+    column-gap: 20px;
+
+    list-style: none;
+}
+.Jfooter__anchor{
+    font-size: 1.5rem;
+    color: white;
+}
+.Jfooter__inet{
+    transition: transform 0.2s;
+}
+.Jfooter__inet:hover{
+    color: var(--secondary-color);
+    transform: scale(1.2);
+}
+/* Screen Medias */
+@media screen and (max-width: 1100px) {
+    /*Star*/
+    .star__about{
+        justify-content: center;
+
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 900px) {
+
+    /*Hero*/
+    .hero__about {
+        max-width: 90%;
+    }
+    /*Star*/
+    .star__wrapper{
+        flex-direction: column;
+    }
+    .star__about{
+        align-items: center;
+    }
+    .star__description{
+        max-width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+
+    /*Nav*/
+    .nav__anchor-list {
+        display: none;
+    }
+
+    /*Hero*/
+    .hero__wrapper {
+        align-items: center;
+    }
+
+    .hero__about {
+        max-width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    /*Hero*/
+    .hero__wrapper {
+        height: 350px;
+        gap: 20px;
+    }
+
+    .hero__title {
+        text-align: center;
+    }
+
+    .hero__about {
+        max-width: 95%;
+        text-align: center;
+    }
+
+    .hero__button {
+        width: 150px;
+    }
+
+    /*Menu*/
+    .menu__description {
+        max-width: 90%;
+    }
+    /*Star*/
+    .star__about{
+        gap: 25px;
+    }
+    .star__button{
+        width: 150px;
+    }
+    /*Contact*/
+    .contact__input{
+        padding: 0 10px;
+    }
+    /*Footer*/
+    .footer__card-main{
+        flex: 4 0 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 10px;
+    }
+
+    /*Menu*/
+    .menu__cards {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 8px;
+    }
+
+    /*Hero*/
+    .hero__wrapper {
+        height: 300px;
+    }
+
+    .hero__button {
+        width: 100px;
+        padding: 5px 0;
+    }
+
+    /*Menu*/
+    .menu__cards {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    html {
+        font-size: 7px;
+    }
+
+    /*Hero*/
+    .hero__wrapper {
+        height: 250px;
+    }
+}
